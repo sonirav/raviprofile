@@ -9,7 +9,7 @@ var http = require("http");
 var fs = require("fs");
 var url = require("url");
 var app = express();
-var port = process.env.PORT || 3000;
+var PORT= process.env.PORT || 3000;
 app.use("/assets",express.static("assets"));
 app.use("/assets/html",express.static("assets/html"));
 // Sets up the Express app to handle data parsing
@@ -92,6 +92,6 @@ connection.query("SELECT * FROM mytbl LIMIT 10;", function(err,res)
 */
 
 
-app.listen(port, function() {
-  console.log("Listening on PORT " + port);
+app.listen(PORT, function() {
+  console.log("Listening on PORT " + PORT);
 });
