@@ -1,0 +1,20 @@
+
+{
+  "name": "raviProfile",
+  "version": "1.0.0",
+  "description": "-Node \r -Express  \r -Jquery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravinder Soni",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "method-override": "^2.3.5"
+  }
+  
+}
