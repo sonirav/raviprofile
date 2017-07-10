@@ -15,27 +15,58 @@
 		    height:100%;
 		}
 
-		.carousel-img {
-		    position: absolute;   
-		    top: 50%;
-		    transform: translateY(-50%);
-		}
+		
     </style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> //<![CDATA[
+$(document).ready(function(){
+    var PORT= process.env.PORT || 3000;
+    var vfrom,vto,vsubject,vmessage,vname;
+    $("#send_email").click(function()
+    { 
+        to =       'sonirav@gmail.com' ;    
+        from=      $("#youremail").val();
+        subject=   $("#subject").val();
+        name=      $("#name").val();
+        message=   $("#message").val();
+        from=      from+"<"+name+">";
+        
+        $("#info").text("Sending E-mail...Please wait");
+$.get("http://"+PORT+"/send",
+{
+    to:to, 
+    from:from, 
+    subject:subject, 
+    text:message
+        },function(data)
+        {
+        if(data=="sent")
+        {
+            $("#info").text("Email is been sent to Ravinder Soni.");
+
+        }
+
+    });
+    });
+});
+</script>
 </head>
 
 <body style="background-color:rgb(255,255,255); font-family: Arial, Helvetica, sans-serif;">
     <div></div>
     <div style="width:100%;">
        <div class="col-md-12" style="padding:0px;width:100%;">
-            <nav class="navbar navbar-default navbar-fixed-top navigation-clean" style="background-color:rgb(73,72,118);color:rgb(255,256,255);">
+            <nav class="navbar navbar-default navbar-fixed-top navigation-clean" style="background-color:rgb(0,51,153);color:rgb(255,255,255);">
     <div class="container">
-        <div class="navbar-header" style="position: absolute; vertical-align: top;">
+        <div class="navbar-header" style="position:relative; 
+        ; vertical-align: top;">
 
- <!--<a href="/" class="navbar-brand navbar-link" style="color:rgba(255,255,255,0.843137);">-->
-        <h3>RAVINDER SONI</h3></a>
-           <!-- 
+<a href="/" class="navbar-brand navbar-link" style="color:rgba(255,255,255,0.843137);">
+        <h4>RAVINDER SONI</h4></a>
+         
             <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            -->
+           
 
         </div>
         <div class="collapse navbar-collapse" id="navcol-1">
@@ -51,9 +82,41 @@
 </nav>
 </div>
 
-<div class="col-md-12" style="height: 600px;"><p><h1 style="text-align: center;">COMMING SOON</h1></p></div>
+<div class="col-md-12" style="height: 625px;margin-top: 85px;">
+
+   <form method="get" action="/send">
+        <div id="info"></div>
+    <div class="form-group"> <!-- Name field -->
+        <label class="control-label requiredField " for="name" style="font-size: 10;">Your Name<span class="asteriskField">*</span></label>
+        <input class="form-control" id="name" name="name" type="text" required="name"/>
+    </div>
+    
+    <div class="form-group"> <!-- Email field -->
+        <label class="control-label requiredField" for="email" style="font-size: 10;">Your Email<span class="asteriskField">*</span></label>
+        <input class="form-control" id="youremail" name="email" type="email" required="email" />
+    </div>
+    
+    <div class="form-group"> <!-- Subject field -->
+        <label class="control-label " for="subject" style="font-size: 10;">Subject</label>
+        <input class="form-control" id="subject" name="subject" type="text" value="From ravindersoni.com" />
+    </div>
+    
+    <div class="form-group"> <!-- Message field -->
+        <label class="control-label " for="message" style="font-size: 10;">Message</label>
+        <textarea class="form-control" cols="40" id="message" name="message" rows="10" >Hi Ravinder, I want to know more about you...</textarea>
+    </div>
+    
+    <div class="form-group">
+        <button class="btn btn-primary " name="submit" type="submit" id="send_email">Send Mail</button>
+    </div>
+   
+    
+</form> 
+ 
+</div>
 <!-- Footer -->
-<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(73,72,118);color:rgb(255,256,255);">
+<div class="col-md-12" width="100%"></div>
+<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(0,51,153);color:rgb(255,256,255);">
     <ul>
         <li><a href="/">Management Mantra</a></li>
         <li><a href="aboutm">About Me</a></li>
@@ -61,7 +124,7 @@
         
     </ul>
 </div>
-<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(73,72,118);color:rgb(255,255,255);">
+<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(0,51,153);color:rgb(255,255,255);">
     <ul>
         <li><a href="mresume">My Resume</a></li>
         <li><a href="contactm">Contact Me</a></li>
@@ -70,10 +133,10 @@
     </ul>
 
 </div>
-<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(73,72,118);color:rgb(255,255,255); ">
+<div class="col-md-4" style="padding:2px;float:left;text-align: left;background-color:rgb(0,51,153);color:rgb(255,255,255); ">
 <p>Ravinder Soni,<br>
 California,<br>USA</p></div>
-<div class="col-md-12" style="padding:0px;float:left;text-align:center;background-color:rgb(73,72,118);color:rgb(255,255,255);">
+<div class="col-md-12" style="padding:0px;float:left;text-align:center;background-color:rgb(0,51,153);color:rgb(255,255,255);">
 
     <p>Copyright (c) 2017</p>
     
