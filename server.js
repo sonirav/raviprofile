@@ -25,20 +25,28 @@ app.get('/',function(req,res){
 	res.sendFile(path.join(__dirname,"index.html"))
 });
 // knowledge base page
-app.get('/knowb',function(req,res){
-	res.sendFile(path.join(__dirname,"/assets/html/knowledgebase.html"))
-});
-
-// about me page
-app.get('/aboutm',function(req,res){
+app.get('/aboutme',function(req,res){
 	res.sendFile(path.join(__dirname,"/assets/html/aboutme.html"))
 });
 
-// myresume page
-app.get('/mresume',function(req,res){
-	res.sendFile(path.join(__dirname,"/assets/html/myresume.html"))
+// about me page
+app.get('/portfolio',function(req,res){
+	res.sendFile(path.join(__dirname,"/assets/html/portfolio.html"))
 });
 
+// myresume page
+app.get('/skills',function(req,res){
+	res.sendFile(path.join(__dirname,"/assets/html/skills.html"))
+});
+app.get('/contact',function(req,res){
+    res.sendFile(path.join(__dirname,"/assets/html/contactme.html"))
+});
+app.get('/tests',function(req,res){
+    res.sendFile(path.join(__dirname,"/assets/html/tests.html"))
+});
+app.get('/resume',function(req,res){
+    res.sendFile(path.join(__dirname,"/assets/html/contactme.html"))
+});
 // contact me page
 //app.get('/contactm',function(req,res){
 //	res.sendFile(path.join(__dirname,"/assets/html/contactme.html"))
@@ -47,7 +55,7 @@ app.get('/mresume',function(req,res){
 /*
     Here we are configuring our SMTP Server details.
     STMP is mail server which is responsible for sending and recieving email.
-*/
+
 var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
@@ -55,11 +63,11 @@ var smtpTransport = nodemailer.createTransport({
         user: "sonirav@gmail.com",
         pass: "GopalKrishn"
     }
-});
+}); */
 /*------------------SMTP Over-----------------------------*/
 
 /*------------------Routing Started ------------------------*/
-
+/*
 app.get('/contactm',function(req,res){
     res.sendFile(path.join(__dirname,'/assets/html/contactme.html'));
 });
@@ -84,7 +92,7 @@ app.get('/send',function(req,res)
             res.redirect("/mailsent");        	
          }
 });
-});
+});*/
 
 /*--------------------Routing Over----------------------------*/
 

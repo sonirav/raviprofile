@@ -1,0 +1,149 @@
+
+    <style type="text/css">
+        		.item{
+        		    position: relative;
+        		    height:100%;
+        		}
+                #logo{
+                    text-align: center; 
+
+                }
+
+                #logoimg{
+                    width: 43%;   
+                }
+                #menu
+                {height: 85vh; 
+                }
+
+                #cont{height: 85vh;
+                    float: left;
+                    text-align: center;
+                }
+                #main{float: left;
+                    height: 85vh;
+                     padding:0;
+                }
+
+          /* div{
+                    border: 1px;
+                    border-style: solid;
+                }*/
+                #top{
+                    height: 12vh;
+                     font-size: 2em;
+                        font-style: italic;
+                        font-family: all;
+                        float: center;
+                } 
+                ul{
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        background-color: #f1f1f1;
+                    }
+
+                li a{
+                   display: block;
+                    color: #000;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                }
+
+                /* Change the link color on hover */
+                li a:hover {
+                    background-color: #555;
+                    color: blue;
+                }
+
+
+                #myimg{  
+                    width: 150px;
+                    height: 1px;
+                    margin-top: 8px;
+                    margin-left: -75px;
+                    display: block;
+                    position: absolute;
+                    left: 41%;
+                    z-index: -1;
+                    -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
+                       -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
+                            box-shadow: 0px 0px 18px 2px #ced8e5;
+                     border-radius: 75px;
+                    background-position: left top;
+                    background-repeat: repeat;
+                    padding: 0px; 
+                    width: 300px;
+                    height: 370px; 
+
+                }
+
+               #myimgl{  
+                    width: 99px;
+                    height: 1px;
+                    margin-top: 8px;
+                    margin-left: -75px;
+                    display: block;
+                    position: relative;
+                
+                    left: 53%; 
+                    z-index: -1;
+                    -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
+                       -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
+                            box-shadow: 0px 0px 18px 2px #ced8e5;
+                     border-radius: 75px;
+                    background-position: left top;
+                    background-repeat: repeat;
+                    padding: 0px; 
+                    width: 100px;
+                    height: 130px; 
+
+                }
+
+                .rimg{  
+                    width: 99px;
+                    height: 1px;
+                    margin-top: 8px;
+                    margin-left: -75px;
+                    display: block;
+                    position: relative;
+                
+                    left: 53%; 
+                    z-index: -1;
+                    -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
+                       -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
+                            box-shadow: 0px 0px 18px 2px #ced8e5;
+                     border-radius: 85px;
+                    background-position: left top;
+                    background-repeat: repeat;
+                    padding: 0px; 
+                    width: 100px;
+                    height: 130px; 
+
+                }
+                #myName{
+                        font-size: 2em;
+                        font-style: italic;
+                        font-family: all;
+                        float: center;
+                        margin-top: 15em;
+
+
+                }
+
+                 #myNamel{
+                        font-size: 1.5em;
+                        font-style: italic;
+                        font-family: all;
+                        float: center;
+                        
+
+
+                }
+        #quote{
+                        font-size: .7em;
+                        font-style: italic;
+                        float: center;
+                }
+    </style>
