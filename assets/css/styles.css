@@ -21,7 +21,7 @@
                     text-align: center;
                 }
                 #main{float: left;
-                    height: 600px;
+                    height: 585px;
                      padding:0;
                 }
 
@@ -127,7 +127,7 @@
                         font-style: italic;
                         font-family: vardana;
                         float: center;
-                        margin-top: 15em;
+                        margin-top: 400px;
 
 
                 }
@@ -142,7 +142,7 @@
 
                 }
         #quote{
-                        font-size: 8px;
+                        font-size: 13px;
                         font-style: italic;
                         float: center;
                 }
