@@ -13,7 +13,7 @@
                     width: 43%;   
                 }
                 #menu
-                {height: 85vh; 
+                {height: 600px; 
                 }
 
                 #cont{height: 600px;
@@ -30,8 +30,8 @@
                     border-style: solid;
                 }*/
                 #top{
-                    height: 12vh;
-                     font-size: 2em;
+                    height: 200px;
+                     font-size: 32px;
                         font-style: italic;
                         font-family: vardana;
                         float: center;
@@ -123,7 +123,7 @@
 
                 }
                 #myName{
-                        font-size: 2em;
+                        font-size: 32px;
                         font-style: italic;
                         font-family: vardana;
                         float: center;
@@ -133,7 +133,7 @@
                 }
 
                  #myNamel{
-                        font-size: 1.5em;
+                        font-size: 24px;
                         font-style: italic;
                         font-family: all;
                         float: center;
@@ -142,7 +142,7 @@
 
                 }
         #quote{
-                        font-size: .7em;
+                        font-size: 8px;
                         font-style: italic;
                         float: center;
                 }
