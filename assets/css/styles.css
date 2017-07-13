@@ -16,12 +16,12 @@
                 {height: 85vh; 
                 }
 
-                #cont{height: 85vh;
+                #cont{height: 600px;
                     float: left;
                     text-align: center;
                 }
                 #main{float: left;
-                    height: 85vh;
+                    height: 600px;
                      padding:0;
                 }
 
