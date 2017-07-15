@@ -194,15 +194,15 @@
                         }
 
                 #xl{
-                  width: 78px;
-                  height: 78px;
-                  padding: 10px 10px;
+                  width: 72px;
+                  height: 72px;
+                  padding: 5px 5px;
                   line-height: 1.33;
                   border-radius: 12px;
                   font-size: 13px;
                   font-weight: bolder;
                   background-color: #80bfed;
-                  color: rgb(255,255,255);
+                  font-color: rgb(255,255,255);
                 }
 
                 p{
