@@ -5,52 +5,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravinder Profile</title>
+    <link rel="icon" href="./assets/img/logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="assets/css/material-menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript">
+
+
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+
+
+    </script>
 
 </head>
 
 <body>
-<div class="col-lg-12 id="main">
 
-<div class="col-lg-2" id="logo" ><img src="./assets/img/logo.png" id="logoimg"></div><div class="col-lg-10" id="top" ><h1 class="jumbotran" align="center">My Professional Journey
+<div class="col-lg-2">
+<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
+</div>
+<div class="col-lg-8" id="logo" >
+    <img src="./assets/img/logo.png" id="logoimg">
+</div>
+<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
+</div>
+</div>
+
+<div class="col-lg-10" id="top" >
+<h1 class="jumbotran" align="center">My Professional Journey</h1>
 </div>
 <div class="col-lg-2" id="menu">
- <nav class="navbar navbar-default role="navigation">
+ <nav class="topnav role="navigation" id="myTopnav">
   <div class="container-fluid">
      <div class="navbar-header">
-     
-
       <span class="visible-xs navbar-brand">MENU</span>
     </div>
-     
-        <ul class = "nav navbar-default" style="margin-top: 20px text-align:left;">
+        <ul class = "topnav" style=" text-align:left;">
             <li><a href="/">Home</a></li><br>
             <li><a href="/aboutme">About Me</a></li><br>
             <li><a href="/portfolio">Portfolio</a></li><br>
             <li><a href="/skills">Skills</a></li><br>
             <li><a href="/tests">Testimonials</a></li><br>
-            <li><a href="/resume">My Resume</a></li><br>
-            
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
         </ul>     
       </div>
   </nav>
+<!--  <div class="col-lg-12" style="padding: 0; text-align: left;">
+   
+  
+</div > -->
+
+<div class="col-lg-12" style="padding-top: 4px; text-align: left;position: relative;">
+
+  <a href="http://linkedin.com/in/ravindersoni" target="_blank">
+  <img src="./assets/img/linkedin1.jpg" align="center" style="width: 46%;">
+  </a>
+  <button class="btn btn-lg" id="xl" >
+   <a href="/assets/pdf/" download="soniresume3.3.pdf"><img src="./assets/img/download.png" width="35%"><br>
+   Download<br>Resume
+   </a>
+  </button>
 </div>
-<div class="col-lg-10" id="cont" ><img src="./assets/img/ravi1.jpg" width="25%" id="myimg"><div align="center" id="myName">Ravinder Soni<br><p align="center" id="quote">"A leader is best when people barely know he exists, when his work is done,<br> his aim fulfilled, they will say: we did it ourselves. —Lao Tzu"<p></div>
+</div>
+<div class="col-lg-10" id="cont" align="center"><img src="./assets/img/ravi1.jpg" id="myimg"><div align="center" id="myName">Ravinder Soni<br><p align="center" id="quote">"A leader is best when people barely know he exists, when his work is done,<br> his aim fulfilled, they will say: we did it ourselves. —Lao Tzu"<p></div>
+
 <form method="get" action="/aboutme">
   
-<button class="btn btn-lg-default">Know More..</button>
+<button class="btn btn-lg btn-default">Know More..</button>
 
 </form>
 
 </div>
-<!--</div> -->
+<!--</div> 
 
-<div class="col-md-12" id="footer"><center>Copyright (c) 2017</center></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<div class="col-md-12" id="footer"><center>Copyright (c) 2017</center></div>-->
+
 </body>
 
 </html>
