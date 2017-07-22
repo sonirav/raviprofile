@@ -1,13 +1,35 @@
-
-    <style type="text/css">
 /*----------------- Nav Bar ---------*/
 				body{
-						font: helvetica;
+				    font: helvetica;
+				    font-size: 18;
+				    }
+            #mainid{
+              padding:0px; 
+              margin:0;
+              width:100%;
+              height: 1200px; 
+            }
+            .hvr{
 
+                    white-space: wrap; 
+                    width: 33.33%; 
+                    word-break: break-all;
+                    overflow: hidden; 
+                    /*border: 1px solid #000000;*/
+              }
 
-				}
-                    .topnav a {
-                      float: left;
+           div.hvr:hover{ column-width: 33.33%;
+                    max-height: 850px;
+                    text-overflow: inherit;
+                    overflow: visible;
+                    word-break: break-all;
+                  
+                }
+            
+           /*     
+
+              .topnav a {
+                      float: left
                       display: block;
                       color: #f2f2f2;
                       text-align: center;
@@ -27,7 +49,7 @@
                     .topnav .icon {
                       display: none;
                     }
-
+*/
                     @media screen and (max-width: 100%) {
                       .topnav a:not(:first-child) {display: none;}
                       .topnav a.icon {
@@ -62,10 +84,7 @@
 
                 #logoimg{   
                     width: 100%;   
-                }
-                #menu
-                {height: 90%; 
-                }
+              }
 
                 #cont{height: 90%;
                     float: left;
@@ -77,15 +96,15 @@
                      padding:0;
                 }
 
-          /* div{
+       /*   div{
                     border: 1px;
                     border-style: solid;
-                }*/
+                } */
                 #top{
                     height: 200px;
                      font-size: 32px;
                         font-style: italic;
-                        font-family: vardana;
+                        font-family: helvetica;
                         float: center;
                 } 
                 ul{
@@ -94,7 +113,8 @@
                         padding: 0;
                         font-size: 18px;
                         width: 100%;
-                        background-color: #f1f1f1;
+                       /* background-color: rgb(71, 60, 114);*/
+                        background: linear-gradient(to right, white , rgb(71, 60, 114)); /* Standard syntax */
                     }
 
                 li a{
@@ -106,47 +126,35 @@
 
                 /* Change the link color on hover */
                 li a:hover {
-                    background-color: #555;
-                    color: blue;
+                    background-color: blue;
+                    color: white;
                 }
 
 
                 #myimg{  
-                /*     width: 110px;
+                    width: 150px;
                     height: 1px;
-                    margin-top: 7px;
-                   margin-left: -75px;*/
+                    margin-top: 30px;
+                    margin-left: -170px;
                     display: block;
-                    position: relative;
-                    left: 38%; 
-                    z-index: -1;
-                    -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
-                       -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
-                            box-shadow: 0px 0px 18px 2px #ced8e5;
-                    border-radius: 75px;
+                    position: all;
+                    border-radius: 15px;
                     background-position: left top;
                     background-repeat: repeat;
                     padding: 0px; 
-                    width: 250px;
-                    height: 320px; 
+                    width: 160px;
+                    height: 220px; 
                 }
 
                #myimgl{  
                     width: 99px;
                     height: 1px;
                     margin-top: 8px;
-                    margin-left: -75px;
                     display: block;
-                    position: relative;
-                
-                    left: 53%; 
-                    z-index: -1;
-                    -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
-                       -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
-                            box-shadow: 0px 0px 18px 2px #ced8e5;
-                     border-radius: 75px;
+                    border-radius: 5px;
                     background-position: left top;
                     background-repeat: repeat;
+                    position: relative;
                     padding: 0px; 
                     width: 100px;
                     height: 130px; 
@@ -166,7 +174,7 @@
                     -webkit-box-shadow: 0px 0px 18px 2px #ced8e5;
                        -moz-box-shadow: 0px 0px 18px 2px #ced8e5;
                             box-shadow: 0px 0px 18px 2px #ced8e5;
-                     border-radius: 85px;
+                    border-radius: 85px;
                     background-position: left top;
                     background-repeat: repeat;
                     padding: 0px; 
@@ -178,9 +186,8 @@
                         position: bottom;
                         font-size: 32px;
                         font-style: italic;
-                        font-family: vardana;
-                        float: center;
-                       /* margin: 5%;*/
+                        font-family: helvetica;
+                
                 }
 
                  #myNamel{
@@ -188,9 +195,6 @@
                         font-style: italic;
                         font-family: all;
                         float: center;
-                        
-
-
                 }
                 #quote{
                                 font-size: 22px;
@@ -214,4 +218,4 @@
                         font-size: 18px;
                 }
 
-    </style>
+

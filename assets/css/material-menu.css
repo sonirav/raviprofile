@@ -1,4 +1,4 @@
-a, a:hover, a:focus {
+/*a, a:hover, a:focus {
   color:#009688;
 }
 
@@ -203,7 +203,7 @@ a, a:focus, a:hover {
 .navigation-clean .navbar-toggle {
   border-color:#ddd;
 }
-
+*/
 .navigation-clean .navbar-toggle:hover, .navigation-clean .navbar-toggle:focus {
   background:none;
 }

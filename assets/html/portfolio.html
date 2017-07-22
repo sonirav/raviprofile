@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="assets/css/material-menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <script type="text/javascript">
 
 
@@ -30,124 +32,144 @@
 
 <body>
 
-<div class="col-lg-2">
-<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
-</div>
-<div class="col-lg-8" id="logo" >
-    <img src="./assets/img/logo.png">
-</div>
-<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
-</div>
-</div>
+<div class="col-lg-12"  align="top" style="background: linear-gradient(to top, rgb(202, 255, 255) ,rgb(168, 198, 247));" id='mainid'>   
+  <ul class="nav nav-tabs" role="navigation">
 
-<div class="col-lg-10" id="top" >
-<h1 class="jumbotran" align="center">My Professional Journey</h1>
-</div>
-<div class="col-lg-2" id="menu">
- <nav class="topnav role="navigation" id="myTopnav">
-  <div class="container-fluid">
-     <div class="navbar-header">
-      <span class="visible-xs navbar-brand">MENU</span>
-    </div>
-        <ul class = "topnav" style=" text-align:left;">
-            <li><a href="/">Home</a></li><br>
-            <li><a href="/aboutme">About Me</a></li><br>
-            <li><a href="/portfolio">Portfolio</a></li><br>
-            <li><a href="/skills">Skills</a></li><br>
-            <li><a href="/tests">Testimonials</a></li><br>
-            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-        </ul>     
-      </div>
-  </nav>
-<!--  <div class="col-lg-12" style="padding: 0; text-align: left;">
-   
-  
-</div > -->
+  <li><a data-toggle="tab" href="/" style="background-color: rgb(206, 219, 239);">Home</a></li>
 
-<div class="col-lg-12" style="padding-top: 4px; text-align: center;position: relative;">
+  <li ><a data-toggle="tab" href="/aboutme" style="background-color: rgb(182, 204, 239)">About Me</a></li>
 
-  <a href="http://linkedin.com/in/ravindersoni" target="_blank">
-  <img src="./assets/img/linkedin2.jpg" align="center">
-  </a>
-  <button class="btn btn-lg" id="xl" >
-   <a href="/assets/pdf/" download="soniresume3.3.pdf"><img src="./assets/img/download.png" width="35%"><br>
-   Download<br>Resume
-   </a>
-  </button>
-</div>
-</div>
-<div class="col-lg-10" id="cont" >
+  <li class="active"><a data-toggle="tab" href="/portfolio" style="background-color: rgb(168, 198, 247)">Portfolio</a></li>
+
+  <li><a data-toggle="tab" href="/skills" style="background-color: rgb(151, 189, 252)">Skills</a></li>
+
+  <li><a data-toggle="tab" href="/tests" style="background-color: rgb(123, 170, 247)">Testimonials</a></li>
+  </ul>
+  <div align="center">
 <img src="./assets/img/ravi1.jpg" width="20%" id="myimgl"><br>
-<p id="myNamel">Ravinder Soni<br></p>
-<h3>Top Three Projects I am Proud of...</h3>
+<p id="myNamel"><h2>Ravinder Soni</h2><br></p> </div>
 
-<p style="text-align: justify; font-size: 18px;">(1) 
-Project: <b>Web Based Complete Financial Accounting System for a Fashion House.</b>
+
+<h2>Top Three Projects I am Proud of...</h2>
+<div class="hvr col-md-4" style="height: 250px; font: helvetica;font-size:28px;">
+<p style="text-align: justify;">(1) 
+Project: Web Based Complete Financial Accounting System for a Fashion House.<br>
 Company: WFX (World Fashion Exchange) (New Jersey),<br> 
-Location: Development Center at Gurgaon and Mumbai India, <br>
-My Job Title: <b>Manager Product Development</b> - Period: 2004 – 2006<br>
-Methodology Used: Agile Scrum<br>
-Budget:$500,000<br>
-Technology Used: MS SQL, VB.NET, ASP.NET and JAVA Script.<br>
-Project Period: One Year and Three Months.<br>
-Number of Developers: Six +2 <br>
-Tools Used: MS Project, Visio, MS PowerPoint, Excel, Visual Source Safe<br><br>
-Client: Accounting Department of a Leading Fashion House<br>
-Project Brief Description: This project was enhancement to the existing product WFX ERP II which is production planning, Inventory and warehouse management system.<br>
- The challenge was to study an existing successfully implemented product and find its cost and accounting related outputs and integrate with new accounting software in a seamless manner. This came as a requirement from a leading fashion house. A team of developers and project coordinators was deployed under my supervision at client side.<br>
- The management was expecting me to work with a newly aquired knowledge about agile framwork and also coach the other staff members of the department.<br>
- Result: My background with ERP and Business accounting helped me to design the Database structure at Chart of Accounts which is the heart of any accounting package.<br>
-• The company rewarded me with Special Achievement Award for 2005-2006.<br>
+Title:Manager Product Development-Period: 2004–2006.<button
+onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">Know More...</button></p>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p style="font: helvetica;font-size: 22px;">
+Framework Used:Agile Scrum<br>
+Client:A Leading Fashion House<br>
+ My Role:The challenge was to study an existing successfully implemented product and find its cost and accounting related outputs and integrate with new accounting software in a seamless manner. This came as a requirement from a leading fashion house. A team of developers and project coordinators was deployed under my supervision at client side. The management was expecting me to work with a newly aquired knowledge about agile framwork and also coach the other staff members of the department.<br>
+ Result:My background with ERP and Business accounting helped me to design the Database structure and Chart of Accounts which is the heart of any accounting package.<br>
+ • The company rewarded me with Special Achievement Award for 2005-2006.<br>
 • Web Based Financial Accounting project was completed in much before target time with a team of seven developers resulting in reduction of development cost.<br>
 • In order to make the software more credible in market I played a key role to get the financial accounting system by getting it certified from a major accounting company.<br>
-• This product was later marketed as a finished product for global market. 
-<hr></p>
-<br><p style="text-align: justify;">
-(2) Project: <b>Setting up a customer service call center and implementing in house CRM software. </b><br>
-Company:  Sylmark Inc. 2006 - 2009 (Now as Ideal Living LLC)<br>
-Location: Los Angeles, Delhi, India, Costa Rica.<br>
-My Job Title:<b> Director Customer Service (Resources)</b><br>
-Methodology Used: Waterfall / Scrum <br>
-Project Time: 2 Year 4 Months<br>
-Technology Used: MS SQL, VB.NET and ASP.NET, Apache Servers, SIP<br>
-Tools Used: MS Project, Visio, MS PowerPoint, Excel, Visual Source Safe<br>
-Resources: Computer Hardware, Call Center Furniture, Facility, IP Telephones, SIP Software<br>
-Human Resource: Call Center Operators, Supervisors, Manager, Trainers, QA Staff, Software Development/ Maintenance Team, Implementation Team.<br>
-Budget:1.7 Million.
-Reports Prepared: Burndown Charts, GNATT Chart, Planned Vs Actual Report, Daily Scrum, Product List, User Stories List, Sprint Lists, DOD Reports for Development Team, Minutes of Meeting.<br>
+• This product was later marketed as a finished product for global market.<br>
+</p></div></div></div></div>
+
+<div class="hvr col-md-4" style="height: 250px; font: helvetica;font-size:28px;">
+<p style="text-align: justify;">(2) Project: Setting up a customer service call center and implementing in house CRM software. <br>
+Company:Sylmark Inc. 2006 - 2009 (Now as Ideal Living LLC)<br>
+Title:Director Customer Service (Resources).<button
+onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">Know More...</button></p>
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p font: helvetica;font-size: 22px;>
+Framework Used:Waterfall / Scrum <br>
+Human Resource: Call Center Operators, Supervisors, Manager, Trainers, QA Staff, Software 
 Client: Internal <br>
-<b>Project Brief Description:</b>
-This project is one the largest projects I ever handled in my career. It actively involved more than 200 personnel working to make it a success. Sylmark Inc. was one of the largest direct marketing companies having a call centers in Los Angles and Colorado with strength of over 250 seats. The main objective of the project was to reduce cost of customer service without compromising the quality. We all arrived at solution to shift the call centers to India and Costa Rica in order to cut the costs. The biggest challenge that how the quality of the call center will remain at par with existing call center. To resolve this issue a best available bilingual training teams was setup to train the staff at both the locations.<br>
-<b>My Role:</b>As a servant leader of the project my job involved to look after every aspect of the project. Conduct daily telephonic meeting and make on site visits, negotiate with hardware / bandwidth vendors, discuss software development progress, resolve daily issues, find viable colocation of the servers, procure facility, conduct interviews, attend onsite training sessions. Attend QA meeting in order to review the progress of the training and implementation. Resolve Hardware and software issues.
-<b>Major Accomplishments</b><br>
-o Over 1.5 million dollars yearly were saved by outsourcing the process to offshore locations.<br>
-o Streamlined operational processes thereby enhanced efficiency by 25% and achieved cost reduction to the tune of 20%.  <br>
-o Cost of operations was reduced by consolidating the vendor base.  <br>
-o Quality Systems and standards of customer service were developed and implemented in the offshore locations. <br>
-o With increase in the workload a careful and strategic expansion of team was made from 15 people to over 108 people in a span of 3 years at the location of Delhi India.<br>
-o The timely deliverable s, team efforts and efficient project management made Company to generate additional revenue of 0.5 Million USD.<br>
-<hr><br><p style="text-align: justify;">
-(3) Project:<b> Member Management System </b><br>
-Company:  <b> St. Matthews Churches (Non-Profit Organization)</b><br>
-Location: Tulsa Oklahoma, TX (2011 – December 2014)<br>
-My Job Title: <b>Deputy Director New Project Development.</b><br>
-Methodology Used: Agile Scrum<br>
-Project Time: 2 Year 3 Months <br>
-Technology Used: FoxPro, MS SQL, VB.NET and ASP.NET<br>
-Tools Used: MS Project, Visio, MS PowerPoint, Excel<br>
+Technology Used: MS SQL, VB.NET and ASP.NET, Apache Servers, SIP.<br>
+Tools Used: MS Project, Visio, MS PowerPoint, Excel, Visual Source Safe.<br>
+Resources: Computer Hardware, Call Center Furniture, Facility, IP Telephones, SIP Software.<br>
+Human Resource: Call Center Operators, Supervisors, Manager, Trainers, QA Staff, Software Development/ Maintenance Team, Implementation Team.<br>
+Budget:1.7 Million. <br>
+Reports Prepared: Burndown Charts, GNATT Chart, Planned Vs Actual Report, Daily Scrum, Product List, User Stories List, Sprint Lists, DOD Reports for Development Team, Minutes of Meeting.<br>
+
+Project Brief Description: This project is one the largest projects I ever handled in my career. It actively involved more than 200 personnel working to make it a success. Sylmark Inc. was one of the largest direct marketing companies having a call centers in Los Angles and Colorado with strength of over 250 seats. The main objective of the project was to reduce cost of customer service without compromising the quality. We all arrived at solution to shift the call centers to India and Costa Rica in order to cut the costs. The biggest challenge that how the quality of the call center will remain at par with existing call center. To resolve this issue a best available bilingual training teams was setup to train the staff at both the locations.<br>
+My Role:As a servant leader of the project my job involved to look after every aspect of the project. Conduct daily telephonic meeting and make on site visits, negotiate with hardware / bandwidth vendors, discuss software development progress, resolve daily issues, find viable colocation of the servers, procure facility, conduct interviews, attend onsite training sessions. Attend QA meeting in order to review the progress of the training and implementation. Resolve Hardware and software issues.<br></p>
+
+</div></div></div></div>
+
+<div class="hvr col-md-4"  style="height: 250px; ">
+<p style="text-align: justify;">
+(3) Project: Member Management System <br>
+Company:  SMCC (Non-Profit Organization)<br>
+Title:Deputy Director New Project Development.<br><button
+onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">Know More...</button></p>
+  <div id="id03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p font: helvetica;font-size: 22px;>
+Framework Used:Agile Scrum<br>
 Reports Prepared: Burn Down Chart, Planned Vs Actual Report, Minutes of Meeting.<br>
 Client: Internal <br>
-<b>Project Brief Description:</b><br>
+Project Brief Description:
 The Church as a philanthropic organization is required to run campaigns in order to expand its membership and also maintain its present members and keep the record of the donations. Although the problem seems to be very simple but it involves lot of hidden complexities like what are the areas giving more donations and what is the financial status of the community, who are most non donors and how to learn from the past campaigns? What is the cost involved in running a campaign. Every member was issued Tax certificate for deductions.<br>
-<b>My Role:</b>
-My basic functionality involves overseeing the software development team and to ensure timely delivery and implementation of the software. Look after the infrastructure requirements. Conduct meetings with stake holders and understand their business requirements and interpreting these into software solutions. Generate project development plan. Conduct software teams meetings and review their development progress. Prepare task and responsibility lists and follow up with assigned team members. Resolve bottle necks with team members and clients. Maintain the database, which involves tuning and optimization; ensure the indexes are in proper order.<br><hr></p>
+My Role:
+My basic functionality involves overseeing the software development team and to ensure timely delivery and implementation of the software. Look after the infrastructure requirements. Conduct meetings with stake holders and understand their business requirements and interpreting these into software solutions. Generate project development plan. Conduct software teams meetings and review their development progress. Prepare task and responsibility lists and follow up with assigned team members. Resolve bottle necks with team members and clients. Maintain the database, which involves tuning and optimization; ensure the indexes are in proper order.</p>
 </p>
+
+</div></div></div></div>
+
+<h2>My Three Bootcamp Projects...</h2>
+
+<div class="hvr col-md-4" style="height: 250px; font: helvetica;font-size:28px;">
+<p style="text-align: justify;">(1) 
+Project: Eat Da Burger<br>
+Platform: HTML 5, Bootstrap, Google Firebase<br> 
+<button
+onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">More...</button></p>
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p style="font: helvetica;font-size: 22px;">
+
+<a href="https://burger101.herokuapp.com/" target="_blank">Eat Da Burger</a>
+
+</p></div></div></div></div>
+
+<div class="hvr col-md-4" style="height: 250px; font: helvetica;font-size:28px;">
+<p style="text-align: justify;">(2) API Call to GIFs from Giphy.com.<button
+onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">More...</button></p>
+  <div id="id05" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p font: helvetica;font-size: 22px;>
+<a href="https://giftastic1.herokuapp.com/" target="_blank">GIFTASTIC</a>
+</p>
+</div></div></div></div>
+
+<div class="hvr col-md-4"  style="height: 250px; ">
+<p style="text-align: justify;">
+(3) Project: Member Management System <br>
+Company:  SMCC (Non-Profit Organization)<br>
+Title:Deputy Director New Project Development.<br><button
+onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-blue w3-border" style="font-size: 16px; border-radius: 40px; border-color:yellow;">More...</button></p>
+  <div id="id06" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<p font: helvetica;font-size: 22px;>
+
+</p>
+
+</div></div></div></div>
 </div>
 <!--
 
-<div class="col-md-12" id="footer" style="position: relative;"><center>Copyright (c) 2017</center></div> -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<div class="col-md-12" id="footer" style="position: relative;"><center>Copyright (c) 2017</center></div> 
+    <script src="assets/js/jquery.min.js"></script> -->
+
 </body>
 
 </html>

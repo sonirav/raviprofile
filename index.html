@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="assets/css/material-menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+  
     <script type="text/javascript">
 
 
@@ -17,7 +20,7 @@
           function myFunction() {
               var x = document.getElementById("myTopnav");
               if (x.className === "topnav") {
-                  x.className += " responsive";
+                  x.className += "responsive";
               } else {
                   x.className = "topnav";
               }
@@ -28,66 +31,34 @@
 
 </head>
 
-<body>
+<body >
 
-<div class="col-lg-2">
-<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
-</div>
-<div class="col-lg-8" id="logo" >
-    <img src="./assets/img/logo.png">
-</div>
-<div class="col-lg-2" style="padding: 0px; text-align: left;position: relative;">
-</div>
-</div>
+<div class="col-lg-12" align="top" style="background: linear-gradient(to top, rgb(202, 188, 255) , rgb(206, 219, 239));" id="mainid">
+         
+  <ul class="nav nav-tabs" role="navigation" >
 
-<div class="col-lg-10" id="top" >
-<h1 class="jumbotran" align="center">My Professional Journey</h1>
-</div>
-<div class="col-lg-2" id="menu">
- <nav class="topnav role="navigation" id="myTopnav">
-  <div class="container-fluid">
-     <div class="navbar-header">
-      <span class="visible-xs navbar-brand">MENU</span>
-    </div>
-        <ul class = "topnav" style=" text-align:left;">
-            <li><a href="/">Home</a></li><br>
-            <li><a href="/aboutme">About Me</a></li><br>
-            <li><a href="/portfolio">Portfolio</a></li><br>
-            <li><a href="/skills">Skills</a></li><br>
-            <li><a href="/tests">Testimonials</a></li><br>
-            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-        </ul>     
-      </div>
-  </nav>
-<!--  <div class="col-lg-12" style="padding: 0; text-align: left;">
-   
+            <li class="active" ><a data-toggle="tab" href="/" style=" background-color: rgb(206, 219, 239);">Home</a></li>
+
+            <li><a data-toggle="tab" href="/aboutme" style="background-color: rgb(182, 204, 239)">About Me</a></li>
+            <li><a data-toggle="tab" href="/portfolio" style="background-color: rgb(168, 198, 247)">Portfolio</a></li>
+            <li><a data-toggle="tab" href="/skills" style="background-color: rgb(151, 189, 252)">Skills</a></li>
+            <li><a data-toggle="tab" href="/tests" style="background-color: rgb(123, 170, 247)">Testimonials</a></li>
+  </ul>
+       <div style="text-align: right;"><a class="navbar-brand" href="#"><img src="./assets/img/logo.png" width="5% alt="image">
+        </a></div>
+
+<!--</nav>  -->
+
+<div align="center" id="myName"><img src="./assets/img/ravi1.jpg" id="myimg"><br><b>Ravinder Soni<br><br><p align="center" id="quote">CERTIFIED AGILE SCRUM MASTER   |  INTERNATIONAL IT PROJECT MANAGER</b><br>"A leader is best when people barely know he exists, when his work is done,<br> his aim fulfilled, they will say: we did it ourselves. —Lao Tzu"<p></div><br>
+
+<form method="get" action="/aboutme" style="text-align: center;">
   
-</div > -->
-
-<div class="col-lg-12" style="padding-top: 4px; text-align: center;position: relative;">
-  <a href="http://linkedin.com/in/ravindersoni" target="_blank">
-  <img src="./assets/img/linkedin2.jpg" align="center">
-  </a>
-  <button class="btn btn-lg" id="xl">
-   <a href="/assets/pdf/" download="soniresume3.3.pdf">
-   <img src="./assets/img/download.png" width="35%"><br>
-   Download<br>Resume
-   </a>
-  </button>
-</div>
-</div>
-<div class="col-lg-10" id="cont" align="center"><img src="./assets/img/ravi1.jpg" id="myimg"><div align="center" id="myName">Ravinder Soni<br><p align="center" id="quote">"A leader is best when people barely know he exists, when his work is done,<br> his aim fulfilled, they will say: we did it ourselves. —Lao Tzu"<p></div>
-
-<form method="get" action="/aboutme">
-  
-<button class="btn btn-lg btn-default">Know More..</button>
+<button class="w3-spin" style="border-radius: 99px 99px 60px 60px;  border-width: 2px; border-style: solid;border-color: gray;"><img src="./assets/img/logo.png" width="70%"><h4>Know More...</h4></button>
 
 </form>
+<br>
 
 </div>
-<!--</div> 
-
-<div class="col-md-12" id="footer"><center>Copyright (c) 2017</center></div>-->
 
 </body>
 
