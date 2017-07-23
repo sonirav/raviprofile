@@ -1,7 +1,7 @@
 /*----------------- Nav Bar ---------*/
 				body{
 				    font: helvetica;
-				    font-size: 18;
+				    font-size: 20;
 				    }
             #mainid{
               padding:0px; 
@@ -193,7 +193,8 @@
                  #myNamel{
                         font-size: 24px;
                         font-style: italic;
-                        font-family: all;
+                         font-style: italic;
+                        font-family: helvetica;
                         float: center;
                 }
                 #quote{
@@ -215,7 +216,7 @@
                 }
 
                 p{
-                        font-size: 18px;
+                        font-size: 20px;
                 }
 
 
