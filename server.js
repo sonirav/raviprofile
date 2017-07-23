@@ -45,7 +45,7 @@ app.get('/tests',function(req,res){
     res.sendFile(path.join(__dirname,"/assets/html/tests.html"))
 });
 app.get('/myresume',function(req,res){
-    res.sendFile(path.join(__dirname,"/assets/html/resume.html"))
+    res.sendFile(path.join(__dirname,"/assets/html/myresume.html"))
 });
 // contact me page
 //app.get('/contactm',function(req,res){
