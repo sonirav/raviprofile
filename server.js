@@ -11,8 +11,10 @@ var url = require("url");
 var app = express();
 var nodemailer = require("nodemailer");
 var PORT= process.env.PORT || 3000;
-app.use("/assets",express.static("assets"));
-app.use("/assets/html",express.static("assets/html"));
+app.use("/css",express.static("css"));
+app.use("/js",express.static("js"));
+app.use("/fonts",express.static("fonts"));
+app.use("/images",express.static("images"));
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,6 +26,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.get('/',function(req,res){
 	res.sendFile(path.join(__dirname,"index.html"))
 });
+/*
 // knowledge base page
 app.get('/aboutme',function(req,res){
 	res.sendFile(path.join(__dirname,"/assets/html/aboutme.html"))
@@ -51,7 +54,7 @@ app.get('/myresume',function(req,res){
 //app.get('/contactm',function(req,res){
 //	res.sendFile(path.join(__dirname,"/assets/html/contactme.html"))
 //});
-
+*/
 /*
     Here we are configuring our SMTP Server details.
     STMP is mail server which is responsible for sending and recieving email.
